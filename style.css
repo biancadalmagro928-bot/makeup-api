@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #faf6f4;
+  color: #3a2f2f;
+  line-height: 1.5;
+}
+
+header {
+  background: #8c3b4a;
+  color: #fff;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+header p {
+  opacity: 0.85;
+  margin-top: 4px;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 16px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+  color: #8c3b4a;
+}
+
+/* filtros */
+.filtros {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e8d9d4;
+}
+
+.campos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  gap: 4px;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #ccb8b2;
+  border-radius: 4px;
+  min-width: 170px;
+  background: #fff;
+}
+
+button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 4px;
+  background: #8c3b4a;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+button:hover {
+  background: #712e3a;
+}
+
+button.secundario {
+  background: #fff;
+  color: #8c3b4a;
+  border: 1px solid #8c3b4a;
+}
+
+button.secundario:hover {
+  background: #f3e4e4;
+}
+
+.status {
+  margin-bottom: 12px;
+  font-style: italic;
+  min-height: 1.4em;
+}
+
+/* cards */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e8d9d4;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+  background: #f5eeeb;
+  border-radius: 4px;
+}
+
+.card h3 {
+  font-size: 0.95rem;
+}
+
+.card .marca {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #8a7a76;
+}
+
+.card .preco {
+  font-weight: bold;
+}
+
+.card button {
+  margin-top: auto;
+}
+
+/* detalhe */
+.detalhe {
+  background: #fff;
+  border: 1px solid #e8d9d4;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.detalhe.oculto {
+  display: none;
+}
+
+.detalhe img {
+  width: 240px;
+  max-width: 100%;
+  height: 240px;
+  object-fit: contain;
+  background: #f5eeeb;
+  border-radius: 8px;
+}
+
+.detalhe .info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.detalhe h2 {
+  margin-bottom: 6px;
+}
+
+.detalhe p {
+  margin-bottom: 8px;
+}
+
+.cores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+
+.cor {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid #aaa;
+}
+
+.fechar {
+  margin-top: 8px;
+}
+
+/* marcas */
+.marcas {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.marcas li {
+  background: #f3e4e4;
+  color: #8c3b4a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.marcas li:hover {
+  background: #e8c9cc;
+}
+
+footer {
+  background: #3a2f2f;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  select, button {
+    width: 100%;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}

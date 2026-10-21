@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Beauty Finder</h1>
+    <p>Encontre produtos de maquiagem por marca e tipo</p>
+  </header>
+
+  <main>
+    <section class="filtros">
+      <h2>Buscar produtos</h2>
+      <div class="campos">
+        <label>
+          Marca
+          <select id="marca">
+            <option value="">Todas</option>
+            <option value="maybelline">Maybelline</option>
+            <option value="covergirl">CoverGirl</option>
+            <option value="revlon">Revlon</option>
+            <option value="nyx">NYX</option>
+            <option value="colourpop">ColourPop</option>
+            <option value="dior">Dior</option>
+            <option value="clinique">Clinique</option>
+            <option value="l'oreal">L'Oréal</option>
+            <option value="milani">Milani</option>
+            <option value="wet n wild">Wet n Wild</option>
+          </select>
+        </label>
+
+        <label>
+          Tipo
+          <select id="tipo">
+            <option value="">Todos</option>
+            <option value="lipstick">Batom</option>
+            <option value="mascara">Máscara de cílios</option>
+            <option value="foundation">Base</option>
+            <option value="blush">Blush</option>
+            <option value="eyeshadow">Sombra</option>
+            <option value="eyeliner">Delineador</option>
+            <option value="eyebrow">Sobrancelha</option>
+            <option value="bronzer">Bronzer</option>
+            <option value="nail_polish">Esmalte</option>
+            <option value="lip_liner">Lápis labial</option>
+          </select>
+        </label>
+
+        <button id="btnBuscar">Buscar</button>
+        <button id="btnLimpar" class="secundario">Ver todos</button>
+      </div>
+    </section>
+
+    <p id="status" class="status"></p>
+
+    <section>
+      <h2 id="tituloLista">Produtos</h2>
+      <div id="lista" class="grade"></div>
+    </section>
+
+    <section id="detalhe" class="detalhe oculto"></section>
+
+    <section>
+      <h2>Marcas em destaque</h2>
+      <ul id="marcasBox" class="marcas"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Bianca Gomes Dalmagro - Fundamentos ao Desenvolvimento Web - Unoesc</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
