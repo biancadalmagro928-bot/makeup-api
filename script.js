@@ -67,16 +67,16 @@ async function carregarLogs() {
       const info = document.createElement("div");
       info.className = "log-info";
       info.innerHTML =
-        "<p><strong>Data:</strong> " + log.desclog + "</p>" +
-        "<p><strong>API:</strong> " + log.descapi + "</p>" +
-        "<p><strong>Método:</strong> " + log.descmetodo + "</p>" +
-        "<p><strong>Resultado:</strong> " + log.descresultado + "</p>";
+        "<p><strong>Data:</strong> " + log.log + "</p>" +
+        "<p><strong>API:</strong> " + log.api + "</p>" +
+        "<p><strong>Método:</strong> " + log.metodo + "</p>" +
+        "<p><strong>Resultado:</strong> " + log.resultado + "</p>";
 
       const btn = document.createElement("button");
       btn.className = "secundario";
       btn.textContent = "Excluir";
       btn.addEventListener("click", function () {
-        excluirLog(log.id);
+        excluirLog(log.idlog);
       });
 
       item.appendChild(info);
